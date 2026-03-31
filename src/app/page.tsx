@@ -2,11 +2,11 @@ import LoginForm from "@/components/LoginForm";
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-emerald-50 p-10 flex items-center justify-center">
+    <div className="min-h-screen bg-emerald-50 p-2 flex items-center justify-center">
       {/* MAIN CARD */}
-      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl overflow-hidden flex">
+      <div className="w-full max-w-7xl bg-white rounded-1xl shadow-2xl overflow-hidden flex">
         {/* LEFT SIDE */}
-        <div className="w-1/2 flex flex-col justify-center px-16 py-12">
+        <div className="w-1/2 px-14 py-14 flex flex-col justify-center">
           {/* LOGO */}
           <div className="flex flex-col items-center mb-10">
             <img src="/logo.svg" className="w-12 h-12 mb-2" />
@@ -25,18 +25,14 @@ export default function LoginPage() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-1/2 bg-emerald-50 flex items-center justify-center relative p-10">
-          {/* background circles */}
+        <div className="w-1/2 bg-emerald-50 flex items-center justify-center relative">
+          {/* BACKGROUND SHAPES */}
           <div className="absolute w-[500px] h-[500px] bg-emerald-200 rounded-full opacity-40"></div>
           <div className="absolute w-[350px] h-[350px] bg-emerald-300 rounded-full opacity-40"></div>
 
-          {/* promo card */}
+          {/* CARD */}
           <div className="z-10 bg-white rounded-2xl shadow-xl p-8 w-[380px] text-center">
-            <img
-              src="/phone.svg"
-              alt="mobile app"
-              className="w-[180px] mx-auto mb-4"
-            />
+            <img src="/phone.svg" className="w-[180px] mx-auto mb-4" />
 
             <h2 className="font-bold text-lg mb-2">
               Download FertiFlow Mobile App
