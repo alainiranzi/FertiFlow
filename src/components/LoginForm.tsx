@@ -1,7 +1,8 @@
 export default function LoginForm() {
   return (
-    <div className="w-full max-w-md">
-      <div className="mb-4">
+    <div className="w-full max-w-md space-y-5">
+      {/* Username */}
+      <div>
         <label className="text-sm text-gray-600">Username</label>
         <input
           type="text"
@@ -10,7 +11,8 @@ export default function LoginForm() {
         />
       </div>
 
-      <div className="mb-4">
+      {/* Password */}
+      <div>
         <label className="text-sm text-gray-600">Password</label>
         <input
           type="password"
@@ -19,11 +21,13 @@ export default function LoginForm() {
         />
       </div>
 
+      {/* Button */}
       <button className="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition">
         Sign in
       </button>
 
-      <div className="mt-4 text-sm">
+      {/* Forgot */}
+      <div className="text-sm text-center">
         <span className="text-gray-600">Forgot password?</span>{" "}
         <a href="#" className="text-emerald-600 font-medium">
           Reset it here
