@@ -9,10 +9,10 @@ export default function LoginPage() {
         <div className="absolute right-[-750px] top-[-300px] w-[1600px] h-[1600px] bg-emerald-300 rotate-45 opacity-30"></div>
       </div>
 
-      {/* MAIN CARD (BIG remains) */}
+      {/* MAIN CARD */}
       <div className="relative z-10 w-full max-w-7xl flex overflow-hidden rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px]">
-        {/* LEFT SIDE */}
-        <div className="w-1/2 p-16 flex flex-col justify-center relative z-20">
+        {/* LEFT */}
+        <div className="w-1/2 p-16 flex flex-col justify-center">
           <div className="flex flex-col items-center mb-10">
             <img src="/logo.svg" className="w-16 h-16 mb-2" />
             <h1 className="text-3xl font-bold text-emerald-600">FertiFlow</h1>
@@ -27,41 +27,40 @@ export default function LoginPage() {
           </p>
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT */}
         <div className="w-1/2 flex items-center justify-center relative overflow-hidden">
-          {/* BACKGROUND TINT */}
-          <div className="absolute inset-0 bg-emerald-50/20 z-0"></div>
+          {/* LIGHT BG */}
+          <div className="absolute inset-0 bg-emerald-50/20"></div>
 
-          {/* PHONE WRAPPER (CENTERED, NOT FULL HEIGHT) */}
-          <div className="relative z-20 flex items-center justify-center">
-            {/* 🔵 CIRCLE ONLY AROUND PHONE */}
-            <div className="absolute flex items-center justify-center">
+          {/* CARD */}
+          <div className="relative z-10 bg-white w-[420px] rounded-2xl shadow-xl p-6 text-center">
+            {/* 🔥 PHONE + CIRCLE (SAME GROUP) */}
+            <div className="relative flex items-center justify-center mb-4">
+              {/* CIRCLE (now INSIDE same group) */}
               <img
                 src="/circle accent.svg"
-                className="w-[520px] opacity-40 animate-spin-slow"
+                className="absolute w-[300px] opacity-40 animate-spin-slow pointer-events-none"
               />
+
+              {/* PHONE */}
+              <img src="/phone.svg" className="w-[180px] relative z-10" />
             </div>
 
-            {/* 📱 SMALL COMPACT PHONE CARD */}
-            <div className="relative z-30 bg-white w-[420px] rounded-2xl shadow-xl p-6 text-center">
-              <img src="/phone.svg" className="w-[180px] mx-auto mb-3" />
+            <h2 className="font-bold text-lg mb-2">
+              Download FertiFlow Mobile App
+            </h2>
 
-              <h2 className="font-bold text-lg mb-2">
-                Download FertiFlow Mobile App
-              </h2>
+            <p className="text-sm text-gray-600 mb-3 leading-relaxed">
+              Verifying payments and delivering products at the Distribution
+              Center
+            </p>
 
-              <p className="text-sm text-gray-600 mb-3 leading-relaxed">
-                Verifying payments and delivering products at the Distribution
-                Center
-              </p>
-
-              <div className="flex justify-center gap-3">
-                <img src="/ios download 2.svg" className="h-9" />
-                <img
-                  src="/get-it-on-google-play-google-play-badge-png-logos-23 1.svg"
-                  className="h-9"
-                />
-              </div>
+            <div className="flex justify-center gap-3">
+              <img src="/ios download 2.svg" className="h-9" />
+              <img
+                src="/get-it-on-google-play-google-play-badge-png-logos-23 1.svg"
+                className="h-9"
+              />
             </div>
           </div>
         </div>
