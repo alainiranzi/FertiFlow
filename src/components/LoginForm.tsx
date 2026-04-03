@@ -19,12 +19,11 @@ export default function LoginForm() {
     <div className="w-full space-y-5">
       {/* USERNAME */}
       <div>
-        <label className="text-sm text-gray-600">Username</label>
         <div className="relative mt-1">
           <input
             type="text"
             placeholder="Enter username"
-            className="w-full pr-10 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            className="w-full pr-10 p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <User
             size={18}
@@ -35,7 +34,6 @@ export default function LoginForm() {
 
       {/* PASSWORD */}
       <div>
-        <label className="text-sm text-gray-600">Password</label>
         <div className="relative mt-1">
           <input
             type="password"
@@ -54,7 +52,7 @@ export default function LoginForm() {
         <button
           onClick={handleLogin}
           disabled={loading}
-          className="bg-emerald-600 text-white py-3 px-16 rounded-lg hover:bg-emerald-700 transition flex items-center justify-center"
+          className="bg-emerald-600 text-white py-4 px-18 rounded-lg hover:bg-emerald-700 transition flex items-center justify-center"
         >
           {loading ? "Signing in..." : "Sign in"}
         </button>
