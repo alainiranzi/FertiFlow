@@ -22,11 +22,11 @@ export default function LoginForm() {
         <div className="relative mt-1">
           <input
             type="text"
-            placeholder="username"
-            className="w-full color-red p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            placeholder="Username"
+            className="w-full p-5 text-lg placeholder:text-lg placeholder:text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <User
-            size={18}
+            size={20}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
           />
         </div>
@@ -36,12 +36,12 @@ export default function LoginForm() {
       <div>
         <div className="relative mt-1">
           <input
-            type="password"
-            placeholder="password"
-            className="w-full pr-10 p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            type="Password"
+            placeholder="Password"
+            className="w-full pr-10 p-5 text-xl placeholder:text-lg placeholder:text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <Lock
-            size={18}
+            size={20}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
           />
         </div>
@@ -59,7 +59,7 @@ export default function LoginForm() {
       </div>
 
       {/* FORGOT */}
-      <p className="text-sm text-left">
+      <p className=" text-left text-1xl">
         Forgot password?{" "}
         <a href="#" className="text-emerald-600 font-medium">
           Reset it here
