@@ -12,17 +12,17 @@ export default function LoginPage() {
       {/* MAIN CARD */}
       <div className="relative z-10 w-full max-w-7xl flex overflow-hidden rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px]">
         {/* LEFT */}
-        <div className="w-1/2 p-16 flex flex-col justify-center">
+        <div className="w-1/2 p-18 flex flex-col justify-center">
           <div className="flex flex-col items-center mb-10">
             <img src="/logo.svg" className="w-16 h-16 mb-2" />
-            <h1 className="text-3xl font-bold text-emerald-600">FertiFlow</h1>
+            <h1 className="text-4xl font-bold text-emerald-600">FertiFlow</h1>
           </div>
 
           <div className="w-full max-w-md mx-auto">
             <LoginForm />
           </div>
 
-          <p className="text-center text-xs text-gray-500 mt-12">
+          <p className="text-left  text-xs text-black-800 mt-12">
             Terms & Conditions - Privacy Policy
           </p>
         </div>
@@ -33,13 +33,13 @@ export default function LoginPage() {
           <div className="absolute inset-0 bg-emerald-50/20"></div>
 
           {/* CARD */}
-          <div className="relative z-10 bg-white w-[420px] rounded-2xl shadow-xl p-6 text-center">
+          <div className="relative z-10 bg-white w-[450px] rounded-3xl shadow-xl p-6 text-center">
             {/* 🔥 PHONE + CIRCLE (SAME GROUP) */}
             <div className="relative flex items-center justify-center mb-4">
               {/* CIRCLE (now INSIDE same group) */}
               <img
                 src="/circle accent.svg"
-                className="absolute w-[300px] opacity-40 animate-spin-slow pointer-events-none"
+                className="absolute w-[800px] h-[200px]opacity-40 animate-spin-slow pointer-events-none"
               />
 
               {/* PHONE */}

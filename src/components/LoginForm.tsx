@@ -16,14 +16,14 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-full space-y-5">
+    <div className="w-full space-y-10">
       {/* USERNAME */}
       <div>
         <div className="relative mt-1">
           <input
             type="text"
-            placeholder="Enter username"
-            className="w-full pr-10 p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            placeholder="username"
+            className="w-full color-red p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <User
             size={18}
@@ -37,8 +37,8 @@ export default function LoginForm() {
         <div className="relative mt-1">
           <input
             type="password"
-            placeholder="Enter password"
-            className="w-full pr-10 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            placeholder="password"
+            className="w-full pr-10 p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <Lock
             size={18}
