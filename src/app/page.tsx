@@ -31,7 +31,7 @@ export default function LoginPage() {
 
           {/* CARD */}
           <div className="relative z-10 bg-white w-[470px] rounded-3xl shadow-xl p-6 text-center">
-            {/* 🔥 PHONE + CIRCLE (SAME GROUP) */}
+            {/* PHONE + CIRCLE (SAME GROUP) */}
             <div className="relative flex items-center justify-center mb-4">
               {/* CIRCLE (now INSIDE same group) */}
               <img
