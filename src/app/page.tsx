@@ -4,7 +4,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden bg-gray-100">
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute right-[-650px] top-[-450px] w-[1600px] h-[1600px] bg-emerald-200 rotate-45 opacity-60"></div>
+        <div className="absolute right-[-650px] top-[-440px] w-[1600px] h-[1600px] bg-emerald-200 rotate-45 opacity-60"></div>
         <div className="absolute right-[-750px] top-[-300px] w-[1600px] h-[1600px] bg-emerald-300 rotate-45 opacity-30"></div>
       </div>
 
