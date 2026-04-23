@@ -59,9 +59,9 @@ export default function LoginForm() {
       </div>
 
       {/* FORGOT */}
-      <p className=" text-left text-1xl">
+      <p className=" text-left text-lg">
         Forgot password?{" "}
-        <a href="#" className="text-emerald-600 font-medium">
+        <a href="#" className="text-emerald-600 font-medium text-sm">
           Reset it here
         </a>
       </p>
