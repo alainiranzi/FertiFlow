@@ -5,16 +5,13 @@ import LoginForm from "@/components/LoginForm";
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden bg-gray-100">
-      {/* PAGE DECOR LAYER */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute right-[-650px] top-[-450px] w-[1600px] h-[1600px] bg-emerald-200 rotate-45 opacity-60"></div>
         <div className="absolute right-[-750px] top-[-300px] w-[1600px] h-[1600px] bg-emerald-300 rotate-45 opacity-30"></div>
       </div>
 
-      {/* MAIN WRAPPER */}
-      <div className="relative z-20 w-full max-w-7xl flex rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px] overflow-visible">
-        {/* LEFT SIDE */}
-        <div className="w-1/2 p-18 flex flex-col justify-center relative z-20">
+      <div className="relative z-10 w-full max-w-7xl flex overflow-hidden rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px]">
+        <div className="w-1/2 p-18 flex flex-col justify-center">
           <div className="flex flex-col items-center mb-10">
             <img src="/logo.svg" className="w-16 h-16 mb-2" />
             <h1 className="text-4xl font-bold text-emerald-600">FertiFlow</h1>
@@ -32,8 +29,8 @@ export default function LoginPage() {
         {/* RIGHT SIDE */}
         <div className="w-1/2 flex items-center justify-center relative z-20">
           {/* CARD */}
-          <div className="relative z-40 bg-white w-[470px] rounded-3xl shadow-xl p-6 text-center translate-y-6 overflow-visible">
-            {/* PHONE + CIRCLE */}
+          <div className="relative z-10 bg-white w-[470px] rounded-3xl shadow-xl p-6 text-center">
+            {/* 🔥 PHONE + CIRCLE (SAME GROUP) */}
             <div className="relative flex items-center justify-center mb-4">
               <img
                 src="/circle accent.svg"

@@ -16,7 +16,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-full space-y-10">
+    <div className="w-full space-y-9">
       {/* USERNAME */}
       <div>
         <div className="relative mt-1">
