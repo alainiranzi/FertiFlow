@@ -11,7 +11,7 @@ export default function LoginPage() {
       </div>
 
       <div className="relative z-10 w-full max-w-7xl flex overflow-hidden rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px]">
-        <div className="w-1/2 p-18 flex flex-col justify-center">
+        <div className="w-1/2 p-16 flex flex-col justify-center">
           <div className="flex flex-col items-center mb-10">
             <img src="/logo.svg" className="w-16 h-16 mb-2" />
             <h1 className="text-4xl font-bold text-emerald-600">FertiFlow</h1>
