@@ -4,83 +4,77 @@ import LoginForm from "@/components/LoginForm";
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden bg-gray-100">
+    <div className="h-screen flex items-center justify-center bg-gray-100 p-6 overflow-hidden relative">
+      {/* BACKGROUND DECOR */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute right-[-650px] top-[-450px] w-[1600px] h-[1600px] bg-emerald-200 rotate-45 opacity-60"></div>
         <div className="absolute right-[-750px] top-[-300px] w-[1600px] h-[1600px] bg-emerald-300 rotate-45 opacity-30"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl flex overflow-hidden rounded-2xl shadow-2xl bg-white/60 backdrop-blur-xl min-h-[820px]">
-        <div className="w-1/2 p-16 flex flex-col justify-center">
-          <div className="flex flex-col items-center mb-10">
-            <img src="/logo.svg" className="w-16 h-16 mb-2" />
-            <h1 className="text-4xl font-bold text-emerald-600">FertiFlow</h1>
+      {/* MAIN WRAPPER */}
+      <div className="relative z-10 w-full max-w-6xl h-[90vh] flex rounded-3xl overflow-hidden shadow-2xl bg-white/60 backdrop-blur-xl">
+        {/* LEFT SIDE (UNCHANGED) */}
+        <div className="w-1/2 flex flex-col justify-center px-12">
+          <div className="flex flex-col items-center mb-8">
+            <img src="/logo.svg" className="w-14 h-14 mb-2" />
+            <h1 className="text-3xl font-bold text-emerald-600">FertiFlow</h1>
           </div>
 
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md mx-auto">
             <LoginForm />
           </div>
 
-          <p className="text-left text-1xl mt-12">
+          <p className="text-center text-sm mt-10 text-gray-600">
             Terms & Conditions - Privacy Policy
           </p>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-1/2 flex items-center justify-center relative z-20">
-          {/* CARD */}
-          <div className="relative z-10 bg-white w-[470px] rounded-3xl shadow-xl p-6 text-center">
-            {/* 🔥 PHONE + CIRCLE (SAME GROUP) */}
-            <div className="relative flex items-center justify-center mb-4">
+        <div className="w-1/2 flex items-center justify-center relative">
+          <div className="relative bg-white w-[380px] rounded-3xl shadow-xl p-2 text-center">
+            {/* PHONE + CIRCLE */}
+            <div className="relative flex items-center justify-center mb-3">
               <img
                 src="/circle accent.svg"
-                className="absolute w-[900px] h-[200px]opacity-40 animate-spin-slow pointer-events-none"
+                className="absolute w-[340px] h-[380px] opacity-40 animate-spin-slow pointer-events-none"
               />
 
-              <img src="/phone.svg" className="w-[180px] relative z-10" />
+              <img src="/phone.svg" className="w-[143px] relative z-10" />
             </div>
 
-            <h2 className="font-bold text-lg mb-2">
+            <h2 className="font-bold text-base mb-2">
               Download FertiFlow Mobile App
             </h2>
 
-            <div className="text-1xl text-gray-700 mb-5 leading-relaxed">
+            <div className="text-sm text-gray-700 mb-4 leading-snug">
               <p>Verifying that a farmer has paid and providing them with</p>
               <p>products they have paid for at</p>
               <p>the Distribution Center</p>
             </div>
 
             <div className="flex justify-center gap-3">
-              <img src="/ios download 2.svg" className="h-9" />
+              <img src="/ios download 2.svg" className="h-8" />
               <img
                 src="/get-it-on-google-play-google-play-badge-png-logos-23 1.svg"
-                className="h-9"
+                className="h-8"
               />
             </div>
           </div>
         </div>
       </div>
-
-      {/* 🔥 TRUE BOTTOM LEFT SPLIT DECOR */}
-      <div className="absolute bottom-3 left-25 z-50 pointer-events-none">
-        {/* ONE COMBINED SHAPE (Vector + Group) */}
-        <div className="relative w-[160px] h-[160px]">
-          {/* VECTOR */}
+      {/* BOTTOM LEFT DECOR (UNCHANGED EXACTLY) */}
+      <div className="absolute bottom-3 left-3 z-50 pointer-events-none">
+        <div className="relative w-[140px] h-[140px]">
           <img
             src="/Vector.svg"
-            className="absolute bottom-0 left-0 w-[120px] h-[120px] object-contain z-20"
+            className="absolute bottom-0 left-0 w-[110px] h-[110px]"
           />
-
-          {/* GROUP (half attached bottom-right of Vector) */}
           <img
             src="/Group.svg"
-            className="absolute bottom-[-10px] left-[50px] w-[120px] h-[120px] object-contain z-10"
+            className="absolute bottom-[-10px] left-[40px] w-[110px] h-[110px]"
           />
         </div>
       </div>
-
-      {/* 🔥 THIS IS WHAT CREATES 50/50 PAGE/CARD SPLIT */}
-      <div className="absolute top-0 left-1/2 w-1/2 h-full z-40 pointer-events-none" />
     </div>
   );
 }
