@@ -2,16 +2,18 @@
 
 import { useState } from "react";
 import { User, Lock } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const handleLogin = () => {
     setLoading(true);
 
     setTimeout(() => {
       setLoading(false);
-      alert("Logged in!");
+      router.push("/dashboard"); // redirect after login
     }, 2000);
   };
 
@@ -36,7 +38,7 @@ export default function LoginForm() {
       <div>
         <div className="relative mt-1">
           <input
-            type="Password"
+            type="password" // ✅ FIXED (was Password)
             placeholder="Password"
             className="w-full pr-10 p-5 text-xl placeholder:text-lg placeholder:text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
@@ -47,19 +49,19 @@ export default function LoginForm() {
         </div>
       </div>
 
-      {/* BUTTON (LEFT FEEL) */}
+      {/* BUTTON */}
       <div className="flex justify-start">
         <button
           onClick={handleLogin}
           disabled={loading}
-          className="bg-emerald-600 text-white py-4 px-18 rounded-lg hover:bg-emerald-700 transition flex items-center justify-center"
+          className="bg-emerald-600 text-white py-4 px-18 rounded-lg hover:bg-emerald-700 transition flex items-center justify-center disabled:opacity-60"
         >
           {loading ? "Signing in..." : "Sign in"}
         </button>
       </div>
 
       {/* FORGOT */}
-      <p className=" text-left text-lg">
+      <p className="text-left text-lg">
         Forgot password?{" "}
         <a href="#" className="text-emerald-600 font-medium text-sm">
           Reset it here
