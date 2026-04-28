@@ -11,7 +11,7 @@ export default function LoginPage() {
         <div className="absolute right-[-750px] top-[-300px] w-[1600px] h-[1600px] bg-emerald-300 rotate-45 opacity-30"></div>
       </div>
 
-      {/* MAIN WRAPPER */}
+      
       <div className="relative z-10 w-full max-w-6xl h-[90vh] flex rounded-3xl overflow-hidden shadow-2xl bg-white/60 backdrop-blur-xl">
         {/* LEFT SIDE (UNCHANGED) */}
         <div className="w-1/2 flex flex-col justify-center px-12">
