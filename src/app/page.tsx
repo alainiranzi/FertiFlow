@@ -12,7 +12,7 @@ export default function LoginPage() {
       </div>
 
       
-      <div className="relative z-10 w-full max-w-6xl h-[90vh] flex rounded-3xl overflow-hidden shadow-2xl bg-white/60 backdrop-blur-xl">
+      <div className="relative z-9 w-full max-w-6xl h-[90vh] flex rounded-3xl overflow-hidden shadow-2xl bg-white/60 backdrop-blur-xl">
       
         <div className="w-1/2 flex flex-col justify-center px-12">
           <div className="flex flex-col items-center mb-8">
