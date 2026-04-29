@@ -17,7 +17,7 @@ export default function LoginPage() {
         <div className="w-1/2 flex flex-col justify-center px-12">
           <div className="flex flex-col items-center mb-8">
             <img src="/logo.svg" className="w-14 h-14 mb-2" />
-            <h1 className="text-3xl font-bold text-emerald-600">FertiFlow</h1>
+            <h1 className="text-3xl font-bold text-emerald-590">FertiFlow</h1>
           </div>
 
           <div className="w-full max-w-md mx-auto">
