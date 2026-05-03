@@ -32,7 +32,7 @@ export default function LoginPage() {
         {/* RIGHT SIDE */}
         <div className="w-1/2 flex items-center justify-center relative">
           <div className="relative bg-white w-[380px] rounded-3xl shadow-xl p-2 text-center">
-            {/* PHONE + CIRCLE */}
+            
             <div className="relative flex items-center justify-center mb-3">
               <img
                 src="/circle accent.svg"
