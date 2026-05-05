@@ -64,7 +64,7 @@ export default function LoginPage() {
       </div>
       {/* BOTTOM LEFT DECOR (UNCHANGED EXACTLY) */}
       <div className="absolute bottom-3 left-3 z-50 pointer-events-none">
-        <div className="relative w-[140px] h-[140px]">
+        <div className="relative w-[139px] h-[140px]">
           <img
             src="/Vector.svg"
             className="absolute bottom-0 left-0 w-[110px] h-[110px]"
