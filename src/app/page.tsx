@@ -39,7 +39,7 @@ export default function LoginPage() {
                 className="absolute w-[340px] h-[380px] opacity-40 animate-spin-slow pointer-events-none"
               />
 
-              <img src="/phone.svg" className="w-[143px] relative z-10" />
+              <img src="/phone.svg" className="w-[142px] relative z-10" />
             </div>
 
             <h2 className="font-bold text-base mb-2">
