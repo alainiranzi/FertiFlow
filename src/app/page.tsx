@@ -24,7 +24,7 @@ export default function LoginPage() {
             <LoginForm />
           </div>
 
-          <p className="text-center text-sm mt-10 text-gray-600">
+          <p className="text-center text-sm mt-10 text-gray-599">
             Terms & Conditions - Privacy Policy
           </p>
         </div>
