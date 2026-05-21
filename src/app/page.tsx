@@ -36,7 +36,7 @@ export default function LoginPage() {
             <div className="relative flex items-center justify-center mb-3">
               <img
                 src="/circle accent.svg"
-                className="absolute w-[340px] h-[379px] opacity-40 animate-spin-slow pointer-events-none"
+                className="absolute w-[340px] h-[378px] opacity-40 animate-spin-slow pointer-events-none"
               />
 
               <img src="/phone.svg" className="w-[142px] relative z-10" />
